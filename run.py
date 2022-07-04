@@ -1,4 +1,4 @@
-import os, platform, dmbf
+import os, platform, dmbf_enc
 
 os.system('git pull')
 
@@ -10,12 +10,12 @@ bit = platform.architecture()[0]
 
 if bit == '64bit':
 
-    from dmbf import Main
+    from dmbf_enc import Main
 
     Main()
 
 elif bit == '32bit':
 
-    from dmbf import Main
+    from dmbf_enc import Main
 
     Main()
