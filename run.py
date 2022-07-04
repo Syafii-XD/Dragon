@@ -1,21 +1,8 @@
-import os, platform, dmbf
+import os
 
-os.system('git pull')
-
- 
-
-import requests
-
-bit = platform.architecture()[0]
-
-if bit == '64bit':
-
-    from dmbf import Main
-
-    Main()
-
-elif bit == '32bit':
-
-    from dmbf import Main
-
-    Main()
+if __name__ == "__main__":
+   try:
+       os.system("git pull")
+       __import__("dmbf").main()
+   except Exception as e:
+       exit(str(e))
