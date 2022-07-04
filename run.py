@@ -1,4 +1,4 @@
-import os, Crack
+import os
 
 if __name__ == "__main__":
    try:
