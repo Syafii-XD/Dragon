@@ -34,8 +34,7 @@ $ pip install futures
 
 
 
-$ pip install gTTs
-
+$ pip install gTTS 
 
 
 
